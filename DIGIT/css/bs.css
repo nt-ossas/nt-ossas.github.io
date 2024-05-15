@@ -1,0 +1,35 @@
+.elenco{
+    text-align: left;
+}
+.pcpartpicker{
+    width: 200px;
+    margin-top: 50px;
+    border-bottom: 2px solid rgb(255, 87, 34);
+    border-radius: 0px !important;
+}
+.img-container{
+    display: flex;
+    gap: 50px;
+    margin: 0 !important;
+}
+.img-container img{
+    max-width: 100px;
+    margin: 0 !important;
+}
+.pc-info{
+    max-width: 150px;
+    margin: 50px;
+    border-radius: 4px;
+}
+@media only screen and (max-width: 800px){
+    .pc-info{
+        max-width: 75px;
+        margin: 10px;
+    }
+    .img-container{
+        gap: 30px;
+    }
+    .img-container img{
+        max-width: 75px;
+    }
+}

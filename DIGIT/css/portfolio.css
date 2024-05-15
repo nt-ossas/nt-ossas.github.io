@@ -1,0 +1,57 @@
+p.animation {
+    position: relative;
+    opacity: .7;
+    left: -115px;
+    top: 27px;
+    font-size: 14px;
+}
+p.animation  span{
+    color: rgb(255,87,34);
+    border-bottom: 1px solid rgb(255,87,34);
+}
+p.animation  span::before{
+    content: '';
+    right: -2px;
+    top: 50%;
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    background: cornsilk;
+    transform: translateY(-45%);
+    animation: blink 1s infinite;
+}
+#second{
+    position: relative;
+    left: -80px;
+}
+.title{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.personal{
+    width: 100%;
+}
+.personal .social-links a{
+    border: 2px solid rgb(44, 44, 44);
+}
+.profile{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+  visibility:visible;
+ }
+@keyframes blink {
+    50%{
+        opacity: 0;
+    }    
+}
+@media only screen and (max-width: 1000px) {
+    .profile{
+        grid-template-columns: 1fr;
+    }
+    .profile img{
+        visibility: hidden;
+        position: absolute;
+    }
+}

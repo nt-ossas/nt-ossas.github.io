@@ -1,0 +1,16 @@
+.scegli li{
+  background-color: rgb(44,44,44);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px black;
+  transition: .5s;  
+  margin-left: -10px;
+}
+.choosen{
+  opacity: 1 !important;
+  margin-left: 35px;
+  transition: .5s;
+  box-shadow: 0px 0px 15px !important;
+  color: rgb(255,87,34);
+  cursor: pointer;
+}
